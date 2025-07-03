@@ -1,18 +1,3 @@
 Array
 (
-    [summary] => g
-    [image_cover] => c
-    [tracklist] => e
-    [artist] => b
-    [main_content] => f
-    [reviewer] => b
-    [type] => review
-    [tags] => a
-    [conclusion] => a
-    [score] => 8
-    [review_date] => 2025-07-01
-    [release_date] => 2023-07-01
-    [subtitle] => d
-    [genre] => Rock
-    [album_title] => a
 )
