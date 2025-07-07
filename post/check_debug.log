@@ -1428,6 +1428,7 @@ user_id=-1, post_id=5, favorited=false
 user_id=-1, post_id=4, favorited=false
 user_id=-1, post_id=3, favorited=false
 user_id=-1, post_id=2, favorited=false
+<<<<<<< HEAD
 user_id=-1, post_id=1, favorited=false
 user_id=-1, post_id=8, favorited=false
 user_id=-1, post_id=7, favorited=false
@@ -1968,3 +1969,5 @@ user_id=2, post_id=5, favorited=false
 user_id=2, post_id=4, favorited=false
 user_id=2, post_id=3, favorited=false
 user_id=2, post_id=2, favorited=false
+=======
+>>>>>>> abdcd80bca42ccb3d71f10a8e48cc8b816ad8962
