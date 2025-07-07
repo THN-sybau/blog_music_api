@@ -37,7 +37,6 @@ while ($row = $result->fetch_assoc()) {
     } else {
         $row['favorited'] = false;
     }
-    file_put_contents("check_debug.log", "user_id=$user_id, review_id=$review_id, favorited=" . ($row['favorited'] ? 'true' : 'false') . "\n", FILE_APPEND);
     $reviews[] = $row;
 }
 

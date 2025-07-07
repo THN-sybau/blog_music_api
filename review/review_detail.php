@@ -9,8 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
     // Lấy thông tin từ reviews + review_detail
     $stmt = $conn->prepare("
         SELECT r.album_title, r.artist, r.reviewer, r.release_date, r.review_date, r.image_cover,
-               d.review_id, d.subtitle, d.summary, d.tracklist,
-               d.main_content, d.score, d.conclusion, d.tags
+               d.review_id, d.subtitle, d.summary, d.tracklist,d.main_content, d.score, d.conclusion, d.tags, d.price
         FROM reviews r
         JOIN review_detail d ON r.id = d.review_id
         WHERE r.id = ?
@@ -38,7 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
             'main_content' => [],
             'score' => [],
             'conclusion' => [],
-            'tags' => []
+            'tags' => [],
+            'price' => []
         ];
 
         while ($m = $mediaResult->fetch_assoc()) {

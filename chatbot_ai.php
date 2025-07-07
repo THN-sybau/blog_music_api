@@ -20,7 +20,7 @@ $url = "https://openrouter.ai/api/v1/chat/completions";
 $data = [
     "model" => "openai/gpt-4o", 
     "messages" => [
-        ["role" => "system", "content" => "Bạn là một trợ lý AI chuyên về âm nhạc, blog, album và nghệ sĩ."],
+        ["role" => "system", "content" => "Bạn là trợ lý AI chỉ đưa ra gợi ý âm nhạc liên quan đến nội dung người dùng đang đọc. Nếu người dùng hỏi về chủ đề ngoài âm nhạc, hãy nói: “Xin lỗi, tôi chỉ hỗ trợ nội dung về âm nhạc trong blog này.”"],
         ["role" => "user", "content" => $prompt]
     ],
     "temperature" => 0.7,
