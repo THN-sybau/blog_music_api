@@ -2,7 +2,6 @@
 require_once "../db.php";
 header('Content-Type: application/json');
 ini_set('display_errors', 1);
-file_put_contents("log_add_blog.txt", print_r($_POST, true));
 
 if (!isset($_POST['type'])) {
     echo json_encode(["status" => false, "message" => "Thiếu tham số 'type'"]);
@@ -51,7 +50,6 @@ if ($type === "post") {
     }
 
 } elseif ($type === "review") {
-    // Kiểm tra dữ liệu bắt buộc cho review
     if (!isset($_POST['album_title'], $_POST['artist'], $_POST['release_date'], $_POST['reviewer'], $_POST['image_cover'], $_POST['subtitle'], $_POST['summary'], $_POST['tracklist'], $_POST['main_content'], $_POST['score'], $_POST['conclusion'], $_POST['tags'])) {
         echo json_encode(["status" => false, "message" => "Thiếu thông tin cho review"]);
         exit;
